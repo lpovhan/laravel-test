@@ -1,4 +1,5 @@
-/laravel/storage/*.key
+/storage/*.key
+/vendor/
 .env
 .env.backup
 .phpunit.result.cache
@@ -9,5 +10,4 @@ npm-debug.log
 yarn-error.log
 /.idea
 /dbdata/*
-/laravel/vendor/
-/laravel/vendor/*
+/vendor/
