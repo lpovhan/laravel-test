@@ -25,7 +25,7 @@ class LoginUserRequest extends APIRequest
     public function rules()
     {
         $rules = User::$rules;
-        $rules['login'] = 'required|string|exists:users,login';
+        $rules['login'] = 'required|string|max:255|exists:users,login';
         return $rules;
     }
 }

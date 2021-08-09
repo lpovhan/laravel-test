@@ -24,7 +24,7 @@ class DestroyClientRequest extends APIRequest
     public function rules()
     {
         return [
-            'key' => 'required|string|exists:clients,key',
+            'key' => 'required|string|max:255|exists:clients,key',
         ];
     }
 }

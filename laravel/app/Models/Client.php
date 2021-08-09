@@ -25,7 +25,7 @@ class Client extends Model
      * @var array
      */
     public static $rules = [
-        'key' => 'required|string|unique:clients,key',
-        'value' => 'required|string'
+        'key' => 'required|string|max:255|unique:clients,key',
+        'value' => 'required|max:255|string'
     ];
 }

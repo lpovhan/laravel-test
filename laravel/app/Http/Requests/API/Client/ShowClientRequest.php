@@ -32,7 +32,7 @@ class ShowClientRequest extends APIRequest
     {
         return [
             'keys' => 'required|array',
-            'keys.*' => 'required|string|exists:clients,key',
+            'keys.*' => 'required|string|max:255|exists:clients,key',
         ];
     }
 }

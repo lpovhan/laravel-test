@@ -52,7 +52,7 @@ class User extends Authenticatable
      * @var array
      */
     public static $rules = [
-        'login' => 'required|string|unique:users,login',
-        'password' => 'required|string'
+        'login' => 'required|string|max:255|unique:users,login',
+        'password' => 'required|string|max:30'
     ];
 }
